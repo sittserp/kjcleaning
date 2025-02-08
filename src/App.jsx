@@ -12,21 +12,21 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/kjcleaning/">Home</Link>
             </li>
             <li>
-              <Link to="/about-us">About Us</Link>
+              <Link to="/kjcleaning/about-us">About Us</Link>
             </li>
             <li>
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/kjcleaning/contact">Contact Us</Link>
             </li>
           </ul>
         </nav>
 
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/contact" element={<ContactForm />} />
+          <Route path="/kjcleaning" element={<Home />} />
+          <Route path="/kjcleaning/about-us" element={<AboutUs />} />
+          <Route path="/kjcleaning/contact" element={<ContactForm />} />
         </Routes>
       </div>
     </Router>
