@@ -1,5 +1,5 @@
 import React from 'react';
-import './CleaningService.css';
+import '../styles/CleaningService.css';
 
 function CleaningService() {
   const services = [

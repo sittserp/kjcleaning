@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import './ContactForm.css';
+import '../styles/ContactForm.css';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
+    from_name: '',
+    reply_to: '',
     phone: '',
-    request: '',
+    message: '',
   });
 
   const [status, setStatus] = useState('');
@@ -26,17 +25,17 @@ const ContactForm = () => {
 
     // Send the form data using EmailJS
     emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+      .sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, e.target, import.meta.env.VITE_EMAILJS_USER_ID)
       .then(
         (result) => {
           console.log(result.text);
           setStatus('Your message has been sent successfully!');
           setFormData({
-            firstName: '',
+            from_name: '',
             lastName: '',
             email: '',
             phone: '',
-            request: '',
+            message: '',
           });
         },
         (error) => {
@@ -51,34 +50,23 @@ const ContactForm = () => {
       <h2>Contact Us</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-field">
-          <label htmlFor="firstName">First Name</label>
+          <label htmlFor="from_name">Your Name</label>
           <input
             type="text"
-            id="firstName"
-            name="firstName"
-            value={formData.firstName}
+            id="from_name"
+            name="from_name"
+            value={formData.from_name}
             onChange={handleChange}
             required
           />
         </div>
         <div className="form-field">
-          <label htmlFor="lastName">Last Name</label>
-          <input
-            type="text"
-            id="lastName"
-            name="lastName"
-            value={formData.lastName}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="form-field">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="reply_to">Email</label>
           <input
             type="email"
-            id="email"
-            name="email"
-            value={formData.email}
+            id="reply_to"
+            name="reply_to"
+            value={formData.reply_to}
             onChange={handleChange}
             required
           />
@@ -95,11 +83,11 @@ const ContactForm = () => {
           />
         </div>
         <div className="form-field">
-          <label htmlFor="request">Request</label>
+          <label htmlFor="message">Message</label>
           <textarea
-            id="request"
-            name="request"
-            value={formData.request}
+            id="message"
+            name="message"
+            value={formData.message}
             onChange={handleChange}
             required
           />

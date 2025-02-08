@@ -5,6 +5,28 @@
   text-align: center;
 }
 
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav li {
+  font-size: 1.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
