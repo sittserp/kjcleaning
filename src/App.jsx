@@ -12,7 +12,7 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/kjcleaning/">Home</Link>
+              <Link to="/kjcleaning/">Home here</Link>
             </li>
             <li>
               <Link to="/kjcleaning/about-us">About Us</Link>
