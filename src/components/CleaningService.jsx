@@ -11,8 +11,8 @@ function CleaningService() {
   return (
     <div className="cleaning-service">
       <h1>House Cleaning Services</h1>
-      <div className="service-details">
-        <img src="../../public/hma-logo.jpg" alt="HMA Logo" />
+      <div>
+        <img src="/hma-logo.jpg" alt="HMA Logo" />
         <div className="pricing">
           <h2>Choose Your Service</h2>
           <div className="pricing-tiers">

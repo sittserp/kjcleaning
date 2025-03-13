@@ -11,13 +11,6 @@ h1 {
   color: #333;
 }
 
-.service-details {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-}
-
 .pricing {
   display: flex;
   flex-direction: column;
