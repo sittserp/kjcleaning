@@ -1,6 +1,7 @@
 import React from 'react'
 import CleaningService from './CleaningService'
 import ContactForm from './ContactForm'
+import '../styles/Home.css'; // Optional: If you want to style the About Us page
 
 function Home () {
   return (

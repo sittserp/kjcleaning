@@ -3,6 +3,7 @@
   text-align: center;
   background-color: #f7f7f7;
   padding: 40px;
+  margin-bottom: 32px;
 }
 
 h1 {
@@ -15,15 +16,6 @@ h1 {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-}
-
-.graphics {
-  margin-right: 50px;
-}
-
-.broom-graphic {
-  width: 150px;
-  height: 150px;
 }
 
 .pricing {
