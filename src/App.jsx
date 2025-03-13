@@ -12,7 +12,7 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/kjcleaning/">Home here</Link>
+              <Link to="/kjcleaning/">Home</Link>
             </li>
             <li>
               <Link to="/kjcleaning/about-us">About Us</Link>
@@ -27,6 +27,7 @@ function App() {
           <Route path="/kjcleaning" element={<Home />} />
           <Route path="/kjcleaning/about-us" element={<AboutUs />} />
           <Route path="/kjcleaning/contact" element={<ContactForm />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
     </Router>
