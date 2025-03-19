@@ -20,7 +20,6 @@ function CleaningService() {
               <div key={service.size} className="pricing-option">
                 <h3>{service.size} Cleaning</h3>
                 <p>Starting at ${service.price}</p>
-                <button>Book Now</button>
               </div>
             ))}
           </div>

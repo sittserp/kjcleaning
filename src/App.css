@@ -70,3 +70,23 @@ nav a:hover {
 .read-the-docs {
   color: #888;
 }
+
+@media (max-width:27em) {
+  #root {
+    max-width: 27em;
+    padding: 1rem;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .contact-form {
+    padding: 1rem;
+    width: 22em;
+  }
+
+  .pricing-tiers {
+    flex-direction: column;
+  }
+}
