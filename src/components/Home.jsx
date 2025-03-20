@@ -3,10 +3,13 @@ import CleaningService from './CleaningService'
 import ContactForm from './ContactForm'
 import '../styles/Home.css'; // Optional: If you want to style the About Us page
 
-function Home () {
+function Home() {
   return (
     <div className='home'>
       <h1>Welcome to Our Cleaning Service Company</h1>
+      <p>
+        Based in Vancouver, WA. Serving southwest WA as well as the Portland, OR area.
+      </p>
       <p>
         We are dedicated to providing high-quality cleaning solutions for residential and commercial spaces.
       </p>
