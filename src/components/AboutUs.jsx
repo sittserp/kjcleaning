@@ -14,6 +14,8 @@ const AboutUs = () => {
       <p>
         Contact us today to learn more about our services and how we can help you achieve a clean and comfortable space!
       </p>
+      <img src="/kitchen.jpg" alt="kitchen" />
+      <img src="/stair.jpg" alt="stair" />
     </div>
   );
 };
