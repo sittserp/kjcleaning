@@ -20,6 +20,7 @@
 }
 
 .form-field label {
+  color: #333;
   display: block;
   font-size: 1rem;
   margin-bottom: 5px;
